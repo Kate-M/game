@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>GOTT</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/stark.png">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Game of the thrones</h1>
+		<div class="game-controls">
+			<div id="shirt" class="shirt control ">
+				<button class="config-game">Shirt Cards</button>
+				<ul class="shirt-list hidden">
+					<li class="shirt-thumb shirt1"><img id="shirt1" src="images/back1-mini.jpg" alt=""></li>
+					<li class="shirt-thumb shirt2"><img id="shirt2" src="images/back2-mini.jpg" alt=""></li>
+					<li class="shirt-thumb shirt3"><img id="shirt3" src="images/back3-mini.jpg" alt=""></li>
+				</ul>
+			</div>
+			<div id="level" class="level control">
+				<button class="config-game">Level</button>
+				<ul class="level-list hidden">
+					<li>
+						<p id='level1' class="level">Low (20 cards)</p>
+					</li>
+					<li>
+						<p id='level2' class="level">Medium (30 cards)</p>
+					</li>
+					<li>
+						<p id='level3' class="level">Hight (40 cards)</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-controls">
+			<div class="control new-game-button">
+				<button id="new_game">New Game</button>
+			</div>
+			<div class="control reset-button">
+				<button id="reset_game">Rules</button>
+			</div>
+		</div>
+		<div class="container">
+			<div id="rule" class="rule">
+				<div class="rule-wrap">
+					<h3>How to play</h3>
+					<p>Memory is a counter game where the object is to find pairs</p>
+					<p>When the game begins, all pictures are hidden.</p>
+					<h3>To play</h3>
+					<ol class="to-play-list">
+						<li>Select two cards to try to match the pictures.</li>
+						<li>If you match the pictures you can go again.</li>
+						<li>If they don`t match it is the computer turn them.</li>
+						<li>The player that finds all pairs wins.</li>
+						<li>Have fun!</li>
+					</ol>
+					<div class="control new-game-button">
+						<button id="start_game">Start</button>
+					</div>
+				</div>
+			</div>
+			<div id="game_area" class="game-area hidden">
+			</div>
+			<div class="time-count">
+				<p id="time"></p>
+			</div>
+			<div id="win_message" class="win-message win-animate hidden">
+				<div class="message-box">
+					<p class="message-text">Congratulations! You Won!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
